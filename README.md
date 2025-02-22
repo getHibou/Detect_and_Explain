@@ -50,7 +50,7 @@ The project relies on the following frameworks:
 - **Saves metrics & confusion matrix**  
 
 ### **5️⃣ Model Evaluation & Visualization**
-- Computes **Accuracy, Precision, Recall, F1-score**  
+- Computes **Accuracy, Precision, Recall, F1-score, AUC**  
 - Saves & plots **Confusion Matrix**  
 - Plots **ROC Curve** to assess model performance  
 
