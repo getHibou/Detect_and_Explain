@@ -1,4 +1,4 @@
-# 🧠 Fine-tuning Generative LLMs to Detect and Explain Suicidal Ideation in Brazilian Portuguese Texts
+# 🧠 Harnessing Generative LLMs to Detect and Explain Suicidal Ideation in Brazilian Portuguese Texts
 
 This repository provides a complete pipeline for fine-tuning **LLMs (Large Language Models)** to classify suicidal ideation using **5-fold cross-validation**, **LoRA optimization**, and **ROC curve analysis**. The models are trained with **Unsloth** for efficient memory usage and fine-tuning.
 
@@ -6,7 +6,7 @@ This repository provides a complete pipeline for fine-tuning **LLMs (Large Langu
 
 This pipeline:
 
-✔️ Uses **Low-Rank Adaptation (LoRA) + RSLora** for memory-efficient fine-tuning.  
+✔️ Uses QLoRA for memory-efficient fine-tuning.
 ✔️ Trains and evaluates **multiple LLMs**, including **LLaMA 3**, **Gemma**, and **Phi-3**.  
 ✔️ Implements **5-fold Stratified Cross-Validation** for better model generalization.  
 ✔️ **Optimizes the classification threshold** using the **ROC-AUC curve**.  
@@ -33,7 +33,7 @@ The project relies on the following frameworks:
 ### **1️⃣ Model Setup & Fine-Tuning**
 - **Loads & configures LLMs** (LLaMA 3, Phi-3, Gemma, Qwen)
 - **Modifies `lm_head` weights** for classification tuning
-- **Uses LoRA with RSLora** to efficiently fine-tune models
+- **Uses QLoRA** to efficiently fine-tune models.
 
 ### **2️⃣ Data Processing**
 - **Loads labeled dataset** from CSV  
@@ -52,7 +52,17 @@ The project relies on the following frameworks:
 ### **5️⃣ Model Evaluation & Visualization**
 - Computes **Accuracy, Precision, Recall, F1-score, AUC**  
 - Saves & plots **Confusion Matrix**  
-- Plots **ROC Curve** to assess model performance  
+- Plots **ROC Curve** to assess model performance
+
+## 🤖 Access our published paper
+
+Submitted to IEEE CBMS 2025 - Under review
+
+## 👏 Contributing
+ 
+If there is a bug, or other improvement you would like to report or request, we encourage you to contribute.
+
+Please, feel free to contact us for any questions: [![Gmail Badge](https://img.shields.io/badge/-ariel.teles@ifma.edu.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ariel.teles@ifma.edu.br)](mailto:ariel.teles@ifma.edu.br )
 
 ---
 
